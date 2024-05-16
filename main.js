@@ -1,11 +1,12 @@
-const  botoes  =  documento . querySelector ( ".botao" )
-console .  log ( botões )
-for  ( seja  i  =  0 ;  i  <  botoes . length  ;  i ++ ) {
-  botoes [ eu ] .  onclique  =  função ( ) {
-    for ( j = 0 ;  j < botoes . length ; j ++ ) {
-    botoes [ j ] . lista de classes . remover ( "ativo" )
+const botoes = document.querySelector(".botao")
+console. log(botoes)
+for (let i = 0; i < botoes.length ; i++){
+  botoes[i]. onclik = function(){
+    for(j=0; j<botoes.length;j++){
+    botoes[j].classList.remove("ativo")
     }
-    botoes [ j ] . lista de classes . add ( "ativo" )
+    botoes[j].classList.add("ativo")
     }
 }
+
 
