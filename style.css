@@ -1,10 +1,10 @@
 :root{
-    --cor-de-fundo:#5e0037;
-    --verde: #3d553a;
-    --branco: #000000;
-    --botao-ativo: #000000;
-    --botao-inativo: rgba(255, 255, 255, 0.76);
-    --texto-fundo: rgba(55, 209, 214, 0.774);
+    --cor-de-fundo:#44013b;
+    --verde: #063600;
+    --branco: #FFFFFF;
+    --botao-ativo: #ffffff;
+    --botao-inativo: rgb(255, 255, 255);
+    --texto-fundo: rgba(229, 246, 247, 0.774);
 }
 
 *{
@@ -51,23 +51,22 @@ span{
 }
 
 .botao:first-child{
-    border-radius: 20px 0px 0 20px;
+    border-radius: 20px 20px 0 0;
 }
 
 .botao:last-child{
-  border-radius: 0 20px 20px 0;
+  border-radius: 0 0 20px 20px;
 }
 
-@media screen and (min-width:700px) {
+@media screen and (min-width: 700px){
   .botoes{
-     display: flex;
+    display: flex;
   }
   .botao:first-child{
-    border-radius: 20px 0px 0 20px;
-}
-.botao:last-child{
-  border-radius: 0 20px 20px 0;
-}
-}
-
+   border-radius: 20px 0px 0px 20px;
+  }
+  .botao:last-child{
+    border-radius: 0 20px 20px 0px;
+  }
   
+}
