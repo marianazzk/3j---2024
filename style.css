@@ -1,8 +1,8 @@
 :root{
     --cor-de-fundo:#44013b;
-    --verde: #063600;
+    --verde: #0d6401;
     --branco: #FFFFFF;
-    --botao-ativo: #ffffff;
+    --botao-ativo: #ff6d6d;
     --botao-inativo: rgb(255, 255, 255);
     --texto-fundo: rgba(229, 246, 247, 0.774);
 }
@@ -57,7 +57,10 @@ span{
 .botao:last-child{
   border-radius: 0 0 20px 20px;
 }
-
+.ativo{
+  background-color:var(--botao-ativo);
+  border-bottom: 2px solid var(--verde);
+}
 @media screen and (min-width: 700px){
   .botoes{
     display: flex;
@@ -68,5 +71,6 @@ span{
   .botao:last-child{
     border-radius: 0 20px 20px 0px;
   }
+  
   
 }
