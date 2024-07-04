@@ -12,7 +12,7 @@ let minutos;
 let horas;
 let dias;
 tempo[0].textContent = tempoObjetivo1-agora;
-segundos=(tempoObjetivo1-agora)/100
+segundos=(tempoObjetivo1-agora)/1000
 minutos=segundos/60
 horas=minutos/60
 dias=horas/24
@@ -20,6 +20,9 @@ segundos= Math.floor(segundos);
 minutos= Math.floor(minutos);
 horas= Math.floor(horas);
 dias= Math.floor(dias);
+segundos = segundos%60
+minutos = minutos%60
+horas = horas%60
 tempo[0].textContent= `faltam ${dias} dias, ${horas} horas, ${minutos} minutos e ${segundos} segundos`
 console.log(tempo);
 for(let i = 0; 1 < botoes.length ; i++){ 
